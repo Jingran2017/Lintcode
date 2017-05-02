@@ -57,6 +57,17 @@ public class search_2D_Matrix {
             return false;
         }
 
+//        if (matrix[start][0] == target) {
+//            return true;
+//        } else if (matrix[end][0] == target) {
+//            return true;
+//        } else if (matrix[end][0]>target && matrix[start][0]<target) {
+//            row=start;
+//        } else if (matrix[end][0]<target) {
+//            row=end;
+//        }  else {
+//            return false;
+//        }
 
         //第二次二分，找出target所在的列
         int s=0;
