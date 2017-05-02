@@ -1,6 +1,4 @@
-/**
- * Created by chaoli on 2017/5/1.
- */
+
 public class strStr {
     /**
      * Returns a index to the first occurrence of target in source,
@@ -12,6 +10,7 @@ public class strStr {
     public int strStr(String source, String target) {
         // write your code here
 
+        //method 1
         if (source == null || target == null ) {
             return -1;
         }
@@ -48,5 +47,35 @@ public class strStr {
             return -1;
         }
 
+
+        //method2
+        public int strStr(String haystack, String needle) {
+
+
+            if (haystack == null ||  needle == null ) {
+                return -1;
+            }
+
+            if (haystack.length() < needle.length() ) {
+                return -1;
+            }
+
+            for (int i=0;i<haystack.length()-needle.length()+1;i++) {
+
+                int j=0;
+                for (j=0;j<needle.length();j++) {
+                    if (haystack.charAt(i+j) != needle.charAt(j)) {
+                        break;
+                    }
+                }
+
+                //finish loop，
+                if ( j == needle.length()) { //
+                    return i;
+                }
+            }
+
+            return -1;
+        }
     }
 }
