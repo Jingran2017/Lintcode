@@ -1,6 +1,4 @@
-/**
- * Created by chaoli on 2017/5/2.
- */
+
 public class search_2D_Matrix {
 
     //2016
