@@ -1,1 +1,2 @@
-read me
+Initial -- Chapter1: strStr & Coding Style
+Binary Search -- Chapter
