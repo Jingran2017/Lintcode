@@ -28,7 +28,7 @@ public class search_in_a_big_sorted_array {
 
 
         int index=1;
-        while(reader.get(index)-1<target){
+        while(reader.get(index-1)<target){
             index=index*2;
         }
 
