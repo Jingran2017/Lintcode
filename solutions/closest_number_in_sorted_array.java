@@ -1,6 +1,4 @@
-/**
- * Created by chaoli on 2017/5/2.
- */
+
 public class closest_number_in_sorted_array {
     public int closestNumber(int[] A, int target) {
         // Write your code here
