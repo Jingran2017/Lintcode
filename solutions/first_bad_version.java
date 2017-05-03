@@ -28,10 +28,14 @@ public class first_bad_version {
 
         if (SVNRepo.isBadVersion(start) == false && SVNRepo.isBadVersion(end) == true) {
             return end;
-        }
+        } //分析:可以参考九章算法答案，本题isBadVersion只有两种结果true或者false，所以SVNRepo.isBadVersion(start)
+            //必然只有两种true或者false，当start为false那么必然return end。
+
 
         return -1;
     }
+
+
 
     //九章答案
     public int findFirstBadVersion(int n) {
