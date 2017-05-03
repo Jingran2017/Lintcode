@@ -3,6 +3,7 @@ public class closest_number_in_sorted_array {
     public int closestNumber(int[] A, int target) {
         // Write your code here
 
+        // any positoin of target
         if ( A == null || A.length ==0) {
             return -1;
         }
