@@ -13,7 +13,7 @@ public class find_minimum_in_rotated_sorted_array {
 
         while (start+1<end) {
             int mid=start+(end-start)/2;
-            if (nums[mid]>nums[end]) {
+            if (nums[mid]>nums[end]) { // 以最后一个数作为比较点
                 start=mid;
             } else if (nums[mid]<nums[end]) {
                 end=mid;
