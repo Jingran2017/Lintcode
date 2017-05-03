@@ -76,8 +76,8 @@ public class search_in_a_big_sorted_array {
         while (start+1<end) {
             int mid=start+(end-start)/2;
             if (reader.get(mid) == target) {
-                end=mid; // very important, 不能直接return mid。因为要求first position，那可能存在3 4 4 情况，mid等于后面那个4的情况，所以
-                        //  要end=mid，这样才会往前再次找mid。如果题目要求是last position，则应该是start=mid；
+                end=mid; // very important, 不能直接return mid。因为要求first position，那可能存在3 4 4 情况，mid等于后面那个4的情况，
+                        //  所有要end=mid，这样才会往前再次找mid。如果题目要求是last position，则应该是start=mid；
             }  else if (reader.get(mid)>target) {
                 end=mid;
             } else {
